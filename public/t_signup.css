@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+#main{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+nav{
+    height: 7vw;
+    border-bottom: 2px solid rgba(228, 198, 198, 0.598);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 40px;
+    
+}
+.img{
+    width: 500px;
+    padding: 10px;
+    
+}
+.chimg{
+    height: 70px;
+    width: 200px;
+   
+}
+.chimg img{
+    object-fit: cover;
+    overflow: hidden;
+    height: 70px;
+    width: 200px;
+    background-size: cover;
+
+}
+nav #btn1{
+    height: 40px;
+    width: 150px;
+    border: 2px solid white;
+    border-radius: 0.8vw;
+    font-size: 1.9rem;
+    font: 16px lato;
+    background-color: #6674cc;
+    color: aliceblue;
+}
+h3{
+    color: black;
+    font-size: 1.2rem;
+}
+nav a{
+    color: black;
+    font-size: 1.2rem;
+    text-decoration-line: none;
+}
+nav #btn2{
+    height: 40px;
+    width: 150px;
+    border: 2px solid white;
+    border-radius: 0.8vw;
+    font-size: 1.9rem;
+    font: 18px lato;
+    background-color: #6674cc;
+    color: aliceblue;
+}
+.hero{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 40px;
+    padding-bottom: 60px;
+    /* margin-left: 20px; */
+    /* margin-right: 40px; */
+    margin-bottom: 50px;
+    margin-top: 2px;
+    background-color: #66a8cc3a;
+    
+}
+.container1{
+    height: 75%;
+    width: 30%;
+   
+}
+.container1 img{
+    background-size: cover;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  
+}
+.container2{
+    height: 80%;
+    width: 35%;
+    background-color: #6674cc21;
+    border: 2px white;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.container2 form input{
+    height: 38px;
+    width: 280px;
+    align-items: center;
+    margin: 5px;
+    overflow-x: hidden;
+    border: 2px solid rgb(144, 125, 125);
+    border-radius: 10px;
+    background-color: rgba(55, 22, 189, 0);
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    font: 16px lato;
+}
+.container2 form button{
+    height: 35px;
+    width: 160px;
+    align-items: center;
+    margin: 5px;
+    overflow-x: hidden;
+    border: 2px solid rgb(144, 125, 125);
+    border-radius: 10px;
+    background-color: rgba(55, 22, 189, 0);
+    margin-top: 20px;
+    text-align: center;  
+    font-size: 1.2rem;
+    font: 16px lato;
+    color: rgb(144, 125, 125); 
+    cursor: pointer;
+}

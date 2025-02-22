@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+   
+}
+
+#main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    overflow-x: hidden;
+}
+.sidebar{
+    height: auto;
+    width: 22%;
+    padding: 20px;
+    background-color: rgba(111, 58, 180, 0.078);
+    position: fixed;
+}
+.sidebar img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-size: cover;
+    border: 2px solid beige;
+    border-radius: 20px;
+}
+.fullscreen{
+    height: 100%;
+    width: 75%;
+   margin-left: 22%;
+}
+.img{
+    height: 20%;
+    width: 80%;
+    padding: 20px;
+}
+.about{
+    height: 78%;
+    width: 80%;
+    border: 2px solid rgba(37, 37, 34, 0.304);
+    border-radius: 20px;
+}
+li{
+    list-style: none;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font: 16px lato;
+}
+li a{
+    text-decoration: none;
+    color: black;
+}
+li:hover {
+    text-decoration: underline; 
+}
+.nav{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 3px solid beige;
+    background-color: rgba(128, 128, 128, 0.062);
+    
+}
+.navimg{
+    height: 7rem;
+    width: 7rem;
+    border: 2px solid beige;
+    border-radius: 50%;
+    background-image: url(https://mir-s3-cdn-cf.behance.net/projects/404/bdb00e101191511.Y3JvcCw2MzIsNDk0LDQ4LDE2NA.png);
+    object-fit: cover;
+    background-size: cover;
+    }
+.nav h2{
+    height: 60%;
+    width: 80%;
+    padding-left: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font: 30px lato;
+}
+/* Complaint Form */
+#hero{
+    height: calc(100% - 20%);
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    overflow-y: auto;
+}
+#hero::-webkit-scrollbar {
+    width: 8px; /* Scrollbar ki width set karta hai */
+}
+#hero::-webkit-scrollbar-thumb {
+    background-color: rgba(25, 22, 28, 0.167); /* Movable part ka color */
+    border-radius: 4px; /* Thumb ke edges ko rounded banata hai */
+}
+
+#hero::-webkit-scrollbar-track {
+    background-color: rgba(240, 240, 240, 0.7); /* Track ka background color */
+}

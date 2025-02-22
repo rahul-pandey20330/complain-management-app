@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+#main{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+nav{
+    height: 7vw;
+    border-bottom: 2px solid rgba(228, 198, 198, 0.598);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 40px;
+    
+}
+.img{
+    width: 500px;
+    padding: 8px;
+    
+}
+.chimg{
+    height: 70px;
+    width: 100px;
+
+}
+.chimg img{
+    object-fit: cover;
+    overflow: hidden;
+    height: 70px;
+    width: 200px;
+    background-size: cover;
+
+}
+nav #btn1{
+    height: 35px;
+    width: 120px;
+    border: 2px solid white;
+    border-radius: 0.8vw;
+    font-size: 1.5rem;
+    font: 16px lato;
+    background-color: #6674cc;
+    color: aliceblue;
+}
+h3{
+    color: black;
+    font-size: 1.2rem;
+}
+nav a{
+    color: black;
+    font-size: 1.2rem;
+    text-decoration-line: none;
+}
+nav #btn2{
+    height: 35px;
+    width: 120px;
+    border: 2px solid white;
+    border-radius: 0.8vw;
+    font-size: 1.5rem;
+    font: 18px lato;
+    background-color: #6674cc;
+    color: aliceblue;
+    cursor: pointer;
+}
+.hero{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 40px;
+    padding-bottom: 60px;
+    /* margin-left: 20px; */
+    /* margin-right: 40px; */
+    margin-bottom: 50px;
+    margin-top: 2px;
+    background-color: #66a8cc3a;
+    
+}
+.container1{
+    height: 80%;
+    width: 30%;
+    border: 2px white;
+    
+}
+.container1 img{
+    background-size: cover;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+}
+.container2{
+    height: 65%;
+    width: 35%;
+    background-color: #6674cc21;
+    border: 2px white;
+    border-radius: 15px;
+    padding: 20px;
+}
+.container2 p{
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+.container2 p #one{
+    color: #6674cc;
+}
+.container2 p #two{
+    color: rgb(255, 102, 0);
+}
+.container2 p #four a{
+    color: #6674cc;
+    
+}
+.container2 #start{
+    height: 40px;
+    width: 30%;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    border: 2px rgb(63, 50, 50);
+    border-radius: 5px ;
+    background-color: #6674cc;
+    color: white;
+    cursor: pointer;
+}
+.popup {
+    height: 200px; /* Size of the popup */
+    width: 500px;
+   background-color: rgba(103, 92, 92, 0.171);
+    position: absolute; /* Positioning relative to the viewport */
+    top: 50%; /* Moves the top edge to the center */
+    left: 50%; /* Moves the left edge to the center */
+    transform: translate(-50%, -50%) scale(0); /* Offsets the position to center the popup */
+    transition: transform 0.3s ease-in-out; 
+    padding: 20px;
+    color: white; /* Text color for content visibility */
+    font-size: 1.2rem;
+    font-family: Arial, sans-serif;
+    border: 2px solid #7b65654f;
+    border-radius: 25px ;
+    z-index: 5rem;
+   
+}
+.popup #user{
+    height: 40px;
+    width: 150px;
+    border: 2px solid rgba(144, 125, 125, 0.532);
+    border-radius: 10px;
+    background-color: rgba(55, 22, 189, 0);
+    margin-top: 20px;
+    text-align: center;  
+    font-size: 2rem;
+    text-underline-offset: none;
+    font: 18px lato;
+    color: rgb(144, 125, 125); 
+    cursor: pointer;
+}
+.popup a{
+    text-decoration: none;
+    color: rgb(36, 28, 28); 
+}
+.popup #admin{
+    height: 40px;
+    width: 150px;
+    border: 2px solid rgba(144, 125, 125, 0.532);
+    border-radius: 10px;
+    background-color: rgba(55, 22, 189, 0);
+    margin-top: 20px;
+    text-align: center;  
+    font-size: 2rem;
+    text-underline-offset: none;
+    font: 18px lato;
+    color: rgb(144, 125, 125); 
+    cursor: pointer;
+}
+.popup #cancle{
+    height: 40px;
+    width: 150px;
+    border: 2px solid rgba(144, 125, 125, 0.532);
+    border-radius: 10px;
+    background-color: rgba(55, 22, 189, 0);
+    margin-top: 20px;
+    text-align: center;  
+    font-size: 2rem;
+    text-underline-offset: none;
+    font: 18px lato;
+    color: rgb(31, 26, 26); 
+    cursor: pointer;
+}

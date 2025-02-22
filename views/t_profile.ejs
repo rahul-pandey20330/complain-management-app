@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user</title>
+    <link rel="stylesheet" href="t_profile.css">
+    <style>
+        table,
+        th,
+        td {
+            border:1px solid rgb(194, 146, 146);
+        }
+       
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="sidebar">
+            <div class="img">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.St-px2X_XecdamnAmBAgUQHaEd&pid=Api&P=0&h=180" alt="logo">
+            </div>
+            <div class="about">
+                <li><a href="home">Home</a></li>
+                <li>Your Profile</li>
+                <li>Your Applications</li>
+                <li>Raise Complaints</li>
+                <li>Submited Complaints</li>
+               <li>About Us</li>
+               <li>logout</li>
+
+            </div>
+        </div>
+        <div class="fullscreen">
+            <div class="nav">
+                <div class="navimg">
+                
+                </div>
+                <h2>All  Submited  Application  Are  Here </h2>
+        
+            </div>
+            <div id="hero">
+
+
+                <table>
+                    <tr>
+                        <th>id</th>
+                        <th>username</th>
+                        <th>course</th>
+                        <th>department</th>
+                        <th>roll_no</th>
+                        <th>faculty_name</th>
+                        <th>complaint_title</th>
+                        <th>complaint_text</th>
+                    </tr>
+                       <% for (let complaint of stu_complaint){%>
+                        <tr>
+                            <td>
+                                <%= complaint.id %></td>
+                                <td>
+                                    <%= complaint.username %>
+                                </td>
+                                <td>
+                                    <%= complaint.course%>
+                                </td>
+                                <td>
+                                    <%= complaint.department %>
+                                </td>
+                                <td>
+                                    <%= complaint.roll_no %>
+                                </td>
+                                <td>
+                                    <%= complaint.faculty_name %>
+                                </td>
+                                <td>
+                                    <%= complaint.complaint_title %>
+                                </td>
+                                <td>
+                                    <%= complaint.complaint_text %>
+                                </td>
+                            
+                        </tr>
+                      <% } %>
+                        
+                </table>
+            </div>
+          
+    <!-- <script>
+        let Urlparams = new URLSearchParams(window.location.search);
+        if(Urlparams.get('submited') === 'true'){
+            alert("Complain Submited Scessfully");
+        }
+        
+    </script> -->
+</body>
+</html>
