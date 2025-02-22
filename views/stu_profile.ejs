@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user</title>
+    <link rel="stylesheet" href="stu_profile.css">
+</head>
+<body>
+    <div id="main">
+        <div class="sidebar">
+            <div class="img">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.St-px2X_XecdamnAmBAgUQHaEd&pid=Api&P=0&h=180" alt="logo">
+            </div>
+            <div class="about">
+                <li><a href="home">Home</a></li>
+                <li>Your Profile</li>
+                <li>Your Applications</li>
+                <li>Raise Complaints</li>
+                <li>Submited Complaints</li>
+               <li>About Us</li>
+               <li>logout</li>
+
+            </div>
+        </div>
+        <div class="fullscreen">
+            <div class="nav">
+                <div class="navimg">
+                
+                </div>
+                <h2>Submited Your Application To Your Adminstrator</h2>
+        
+            </div>
+            <div id="hero">
+
+                <div class="user">
+                    <h2>Enter Your Information</h2>
+                    <form action="/stu_profile" method="post">
+                        <input 
+                        type="text"
+                        placeholder="Enter Your Name"
+                        name="username"
+                        id="name"
+                        pattern="[A-Za-z\s]+"
+                        title="Only alphabets and spaces are allowed"
+                        required
+                
+                        ><br>
+                       
+                        <input 
+                        type="text"
+                        placeholder="Enter Your course"
+                        name="course"
+                        id="name"
+                        pattern="[A-Za-z\s]+"
+                        title="Only alphabets and spaces are allowed"
+                        required
+                        >
+                        
+                        <br>
+                        
+                        <input 
+                        type="email"
+                        placeholder="Enter You Email Id"
+                        name="email"
+                        id="email"
+                        >
+                        
+                        <br>
+                        
+                        <input
+                        type="number"
+                        placeholder="Enter Your Roll Number"
+                        id="number"
+                        name="roll_no"
+                        min="0"
+                        required
+                        >
+                        
+                        <br>
+                        
+                        <input 
+                        type="number"
+                        placeholder="Enter Your Ten Digit Mobile Number"
+                        name="mobile_no"
+                        id="mobile_number"
+                        pattern="\d{10}" 
+                        title="Enter a valid 10-digit mobile number" 
+                        >
+                        
+                </div>
+            <div class="admin">
+
+                <form action="/stu_profile" method="post">
+                    <h2>Department Information</h2>
+        <input type="text"
+        placeholder="Enter Your Department"
+        name="department"
+        
+        pattern="[A-Za-z\s]+"
+        title="Only alphabets and spaces are allowed"
+        required
+        ><br>
+        <input type="text"
+        placeholder="Faculty Coordinator Name"
+        name="faculty_name"
+       
+        pattern="[A-Za-z\s]+"
+        title="Only alphabets and spaces are allowed"
+        required
+        ><br>
+        <input type="email"
+        placeholder="Faculty Coordinator Email"
+        name="faculty_email"
+        ><br>
+        <input type="text"
+        placeholder="Complain Title"
+        name="complaint_title"
+       
+        pattern="[A-Za-z\s]+"
+        title="Only alphabets and spaces are allowed"
+        required
+        ><br>
+        <p>Write Complain Here</p>
+        <textarea cols="5" rows="10" name="complaint_text" id="complain" >
+            
+        </textarea><br>
+        <button>Submit</button>
+                </form>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let Urlparams = new URLSearchParams(window.location.search);
+        if(Urlparams.get('submited') === 'true'){
+            alert("Complain Submited Scessfully");
+        }
+        
+    </script>
+</body>
+</html>

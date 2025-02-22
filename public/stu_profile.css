@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+#main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    overflow: hidden;
+}
+.sidebar{
+    height: 100%;
+    width: 22%;
+    padding: 20px;
+    background-color: rgba(111, 58, 180, 0.078);
+}
+.sidebar img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-size: cover;
+    border: 2px solid beige;
+    border-radius: 20px;
+}
+.fullscreen{
+    height: 100%;
+    width: 75%;
+   
+}
+.img{
+    height: 20%;
+    width: 80%;
+    padding: 20px;
+}
+.about{
+    height: 78%;
+    width: 80%;
+    border: 2px solid rgba(37, 37, 34, 0.304);
+    border-radius: 20px;
+}
+li{
+    list-style: none;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font: 16px lato;
+}
+li a{
+    text-decoration: none;
+    color: black;
+}
+li:hover {
+    text-decoration: underline; 
+}
+.nav{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 3px solid beige;
+    background-color: rgba(128, 128, 128, 0.062);
+}
+.navimg{
+    height: 7rem;
+    width: 7rem;
+    border: 2px solid beige;
+    border-radius: 50%;
+   
+    background-image: url(https://mir-s3-cdn-cf.behance.net/projects/404/bdb00e101191511.Y3JvcCw2MzIsNDk0LDQ4LDE2NA.png);
+    object-fit: cover;
+    background-size: cover;
+    }
+.nav h2{
+    height: 60%;
+    width: 80%;
+    padding-left: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font: 30px lato;
+}
+/* Complaint Form */
+#hero{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    padding: 25px;
+    display: flex;
+    
+}
+.user{
+    height: 80%;
+    width: 45%;  
+    border: 2px solid beige;
+    border-radius: 30px;
+    padding: 30px;
+    background-color: rgba(67, 67, 165, 0.082);
+  
+}
+.admin{
+    height: 82%;
+    width: 60%;
+    border: 2px solid beige;
+    border-radius: 30px;
+    margin-left: 20px; 
+    background-color: rgba(67, 67, 165, 0.082);
+    margin-bottom: 30px;
+}
+.user input{
+    height: 50px;
+    width: 300px;
+    padding: 18px;
+    margin: 8px;
+    border: 2px solid beige;
+    border-radius: 20px;
+    background-color: rgba(90, 51, 51, 0.126);
+}
+.user h2{
+    font-family: 'Times New Roman', Times, serif;
+    font: 20px lato;
+    padding-left: 18px;
+}
+
+/* Admin */
+.admin input{
+    height: 40px;
+    width: 300px;
+    padding: 20px;
+    margin: 8px;
+    border: 2px solid beige;
+    border-radius: 20px;
+    background-color: rgba(90, 51, 51, 0.126);
+}
+.admin h2{
+    font-family: 'Times New Roman', Times, serif;
+    font: 20px lato;
+    padding-left: 22px;
+    margin-top: 18px;
+
+}
+.admin p{
+    font-family: 'Times New Roman', Times, serif;
+    font: 18px lato;
+    padding-left: 20px;
+}
+.admin textarea{
+    height: 120px;
+    width: 260px;
+    padding: 20px;
+    margin: 8px;
+    border: 2px solid beige;
+    border-radius: 20px;
+    background-color: rgba(90, 51, 51, 0.126);
+}
+.admin button{
+    position: absolute;
+    right: 12vh;
+    bottom: 2%;
+    height: 45px;
+    width: 130px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid rgba(36, 36, 22, 0.215);
+    border-radius: 20px;
+    background-color: rgba(90, 51, 51, 0.126);
+    font: 18px lato;
+    cursor: pointer;
+}

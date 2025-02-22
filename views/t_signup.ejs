@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMS</title>
+    <link rel="stylesheet" href="t_signup.css">
+</head>
+<body>
+    <div id="main">
+        <nav>
+        <div class="img">
+            <div class="chimg">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.St-px2X_XecdamnAmBAgUQHaEd&pid=Api&P=0&h=180" alt="">
+            </div>
+        </div>
+        <button id="btn1">Aobut Us</button>
+            <h3>FAQ</h3>
+            <a href="home">Home</a>
+            <a href="login">Login</a>
+            <button id="btn2"> SignUp</button>
+        </nav>
+
+        <div class="hero">
+            <div class="container1">
+                <img src="https://echo-tech.com/EchoBusV3.0/SystemAssets/Complaint%20MS/89de60f4-26c2-41bf-8a75-703d77665a35_wael-01.png" alt="">
+            </div>
+            <div class="container2">
+                <h2>Creat Your Account</h2>
+                <form action="/t_profile" method="post">
+                   <input type="text"
+                    placeholder="Enter Your Full Name"
+                    name="username"
+                    id="name"
+                    pattern="[A-Za-z\s]+"
+                    title="Only alphabets and spaces are allowed"
+                    required>
+                    <br>
+                    <input type="text"
+                    placeholder="Creat Teacher Id"
+                    name="teacher_id"
+                    id="name"
+                    pattern="[A-Za-z\s]+"
+                    title="Only alphabets and spaces are allowed"
+                    required>
+                    <br>
+                    <input 
+                    type="number"
+                    placeholder="Enter Your Ten Digit Mobile Number"
+                    name="mobile_no"
+                    id="mobile_number"
+                    pattern="\d{10}" 
+                    title="Enter a valid 10-digit mobile number" 
+                    >
+                    <br>
+                    <input 
+                      type="email"
+                         placeholder="Enter You Email Id"
+                         name="email"
+                          id="email"
+                          required
+                            >
+                            <br>
+                    <input type="password"
+                    placeholder="Enter Your Password"
+                    name="password"
+                    required>
+                    <br>
+                    <button>SignUp Now</button>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+   
+</body>
+</html>
