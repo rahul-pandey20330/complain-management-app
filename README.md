@@ -1,5 +1,5 @@
-This is Complain Management system In which User Can Send his compalin to his manager or anyone.
-For This Project Techmology Used 
+<h2>This is Complain Management system In which User Can Send his compalin to his manager or anyone.</h2>
+<h3>For This Project Technology Used </h3>
 <li>HTML%</li>
 <li>CSS</li>
 <li>JavaScript</li>
